@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Strings</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<style>
+    h1 {
+        font-family: American Typewriter;
+        text-align: center;
+        color: #006aff;
+    }
+    label { 
+        font-family: American Typewriter;
+    }
+    button {
+        color: red;
+        font-family: Gill Sans;
+    }
+    #boxes1{
+    width: 800px;
+    margin: 0 auto;
+    color: #c7daf2(255, 255, 255);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+	background-color: #2665bd;
+    text-align: center;
+    text-size-adjust: 100px;
+    }
+    body {
+        color: white;
+        background-image: url('https://www.shutterstock.com/image-illustration/abstract-blue-diamond-texture-crystal-600nw-1368937850.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+    }
+
+</style>
+<body>
+<pre type="text" id="strings"></pre>
+<h1> String Showcase: My Basic Info</h1>
+<div id="boxes1">
+    <label> Full Name: </label> <br/>
+    <input type="text" id="input1" placeholder="Input detail..."> <br/><br/><br/>
+    <label> Age: </label> <br/>
+    <input type="number" id="input2" placeholder="Input detail..."><br/><br/><br/>
+    <label> School </label> <br/>
+    <input type="text" id="input3" placeholder="Input detail..."> <br/><br/><br/>
+
+   <button py-click="generate_message">Generate Message</button>
+<br/> <br/>
+
+    <div id="output1"></div>
+</div>
+    <script type="py" src="main.py">  
+    </script>
+    <!--References: Image reference: (image was taken from Shutterstock)
+      Sararwut, J. (2019). Abstract Blue Diamond Texture Crystal Close-Up Background [Online Photo]. Shutterstock. https://www.shutterstock.com/image-illustration/abstract-blue-diamond-texture-crystal-close-1368937850 -->
+</body>
+</html>
